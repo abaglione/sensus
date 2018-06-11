@@ -178,3 +178,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 	
 }
+
+/* Hidden HTML Templates */
+
+.hidden-template { display: none; }
