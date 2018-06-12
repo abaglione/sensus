@@ -179,6 +179,28 @@ only screen and (                min-resolution: 2dppx) {
 	
 }
 
-/* Hidden HTML Templates */
+/*****  Hidden HTML Templates *****/
 
 .hidden-template { display: none; }
+
+
+/*****  Dual Column Layout *****/
+
+/* .column {
+    float: left;
+}
+
+.left {
+    width: 35%;
+}
+
+.right {
+    width: 65%;
+} */
+
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */

@@ -21,6 +21,10 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function () {
 
+	$(document).find('.probe_div').each( function(index) {
+		$(this).hide(100);
+	})
+
 	var script_uniqueid = 0;
 
 	/*
