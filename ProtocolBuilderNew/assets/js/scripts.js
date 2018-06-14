@@ -21,7 +21,7 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function () {
 
-	$(document).find('.probe_div').each( function(index) {
+	$(document).find('.probe-details').each( function(index) {
 		$(this).hide(100);
 	})
 
@@ -101,16 +101,24 @@ jQuery(document).ready(function () {
 		});
 	});
 
-	$(".probe_div").hide();
+	$(".probe-details").hide();
 
 	$(document).on('change', '.probe', function () {
 		if (!this.checked) {
-			$("#" + this.name + "_probe_div").hide(100);
+			$("#" + this.name + "_div").hide(100);
 
 		} else {
-			$("#" + this.name + "_probe_div").show(100);
+			$("#" + this.name + "-div").show(100);
 
 		}
+
+	});
+
+	$(document).on('click', '.modal-launch', function () {
+
+		var modal_name = $(this).attr('data-target').text().replace('#', '');
+		alert(modal_name);
+		$("#" + name + "-div").show(100);
 
 	});
 
@@ -118,7 +126,7 @@ jQuery(document).ready(function () {
 		var clone = $('#new-script-template').children().clone();
 		var $new_script_html = $(clone);
 		var $script_name_edit = $new_script_html.find('.script-name-edit');
-		var $new_script_details_div = $new_script_html.find('#_details_div');
+		var $new_script_details_div = $new_script_html.find('#-details-div');
 		
 		var script_name = 'New Script ' + script_uniqueid;
 		var current_id = $new_script_details_div.attr("id");
@@ -131,10 +139,10 @@ jQuery(document).ready(function () {
 		// prepend the new script's unique id to the existing name. 
 		$new_script_html.find('.script-uniqueid').each(function (index) {
 			var current_name = $(this).attr('name');
-			$(this).attr('name', 'script_' + script_uniqueid + current_name);
+			$(this).attr('name', 'script-' + script_uniqueid + current_name);
 		});
 
-		$new_script_html.appendTo('#scripted-interactions_scripts');
+		$new_script_html.appendTo('#scripted-interactions-scripts');
 		script_uniqueid += 1;
 	});
 

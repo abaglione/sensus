@@ -1,0 +1,109 @@
+<div class="hidden-template" id="new-script-template">
+    <div class="script">
+        <div class="form-group row">
+            <div class="col-md-3">Name</div>
+            <div class="col-md-3">
+                <input type="text" class="form-control script-uniqueid script-name-edit" name="_name">
+            </div>
+            <div class="col-md-2">Enable</div>
+            <div class="col-md-1">
+                <label class="switch">
+                    <input type="checkbox" class="form-control script-details-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-danger delete-script">Delete</button>
+            </div>
+        </div>
+        <div id="-details-div" class="script-uniqueid script-details" style="display: none;">
+            <div class="form-group row">
+                <div class="col-md-3">Allow Cancel</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_allow_cancel" class="script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-3">Maximum Age (Mins)</div>
+                <div class="col-md-3">
+                    <input type="number" name="_max_age" class="form-control script-uniqueid">
+                </div>
+                <div class="col-md-3">Trigger Windows</div>
+                <div class="col-md-3">
+                    <input type="number" name="_trigger_windows" class="form-control script-uniqueid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-3">Non-DOW Trigger Interval (Days)</div>
+                <div class="col-md-3">
+                    <input type="number" name="_non_dow_trigger_interval" class="form-control script-uniqueid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-3">One Shot</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_one_shot" checked class="form-control script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="col-md-3">Run On Start</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_run_on_start" class="form-control script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="col-md-3">Display Progress</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_display_progress" class="script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">Run Mode</div>
+                <div class="col-md-6">
+                    <select class="form-control script-uniqueid" name="_run_mode">
+                        <option value="Multiple">Multiple</option>
+                        <option value="SingleKeepNewest" selected>SingleKeepNewest</option>
+                        <option value="Round to Ones">SingleKeepOldest</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">Expire Script When Window Ends</div>
+                <div class="col-md-6">
+                    <input type="number" name="_expire_script" class="form-control script-uniqueid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6">Incomplete Submission Confirmation</div>
+                <div class="col-md-6">
+                    <input type="text" name="_incomplete_submission_confirmation" value="You have not completed all required fields. Do you want to continue?"
+                                                         class="form-control script-uniqueid">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-3">Shuffle Input Groups</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_shuffle_input_groups" class="form-control script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="col-md-3">Use Trigger Timestamp in Subcaption</div>
+                <div class="col-md-1">
+                    <label class="switch">
+                        <input type="checkbox" name="_use_trigger_timestamp_subcaption" class="script-uniqueid">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,6 @@ body {
     font-weight: 300;
     color: #888;
     line-height: 30px;
-    text-align: center;
 }
 
 strong { font-weight: 500; }
@@ -76,11 +75,11 @@ ul.navbar-nav {
 .navbar-inverse ul.navbar-nav li .li-social a:hover, 
 .navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #f35b3f; }
 
-.navbar-brand {
+/* .navbar-brand {
 	width: 162px;
 	background: url(../img/logo.png) left center no-repeat;
 	text-indent: -99999px;
-}
+} */
 
 
 /***** Top content *****/
@@ -126,7 +125,7 @@ ul.navbar-nav {
 .f1-step.activated p { color: #f35b3f; }
 .f1-step.active p { color: #f35b3f; }
 
-.f1 fieldset { display: none; text-align: left; }
+.f1 fieldset { text-align: left; }
 
 .f1-buttons { text-align: right; }
 
@@ -172,10 +171,10 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 	
-	/* logo */
+	/* logo
     .navbar-brand {
     	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 162px 36px !important;
-    }
+    } */
 	
 }
 
@@ -183,7 +182,10 @@ only screen and (                min-resolution: 2dppx) {
 
 .hidden-template { display: none; }
 
-
+.enable {
+	text-align: right;
+	font-weight: bold;
+}
 /*****  Dual Column Layout *****/
 
 /* .column {
@@ -204,3 +206,8 @@ only screen and (                min-resolution: 2dppx) {
     display: table;
     clear: both;
 } */
+
+.modal-dialog {
+    width: 800px;
+    margin: 30px auto;
+}

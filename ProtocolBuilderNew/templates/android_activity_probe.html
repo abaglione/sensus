@@ -1,0 +1,131 @@
+<script id="AndroidActivityProbe-template" type="text/x-handlebars-template">
+    <div class="form-group row">
+
+        <div class="col-md-4 probe-name">
+            <a href="javascript:void(0)" class="help" id="Sensus.Android.Probes.Movement.AndroidActivityProbe.html">Activity (Android)</a>
+        </div>
+        <div class="col-md-2 enable">
+            <h4>Enable</h4>
+        </div>
+        <div class="col-md-2">
+            <label class="switch">
+                <input type="checkbox" name="AndroidActivityProbe" class="probe">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary modal-launch" data-toggle="modal" data-target="#AndroidActivityProbe-modal">Edit Details</button>
+        </div>
+    
+    </div>
+    <div class="modal fade" id="AndroidActivityProbe-modal" tabindex="-1" role="dialog" aria-labelledby="AndroidActivityProbe-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AndroidActivityProbe-modal-label">Activity (Android)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+    
+                    <!-- Activity (Android) -->
+    
+                    <div id="AndroidActivityProbe-details" class="probe-details">
+    
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)" class="help" id="Sensus.Probes.Probe.html#Sensusmd-4Probes-Probe-StoreData">Store Data</a>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="switch">
+                                    <input type="checkbox" name="AndroidActivityProbe-StoreData" checked class="form-control">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)" class="help" id="Sensus.Probes.ListeningProbe.html#Sensus-Probes-ListeningProbe-KeepDeviceAwake">Keep Device Awake</a>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="switch">
+                                    <input type="checkbox" name="AndroidActivityProbe-KeepDeviceAwake">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)" class="help" id="Sensus.Probes.ListeningProbe.html#Sensus-Probes-ListeningProbe-MaxDataStoresPerSecond">Max Data / Second</a>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="AndroidActivityProbe-MaxDataStoresPerSecond" class="form-control">
+                            </div>
+                        </div>
+    
+    
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)" class="help" id="Sensus.Android.Probes.Movement.AndroidActivityProbe.html#Sensus-Android-Probes-Movement-AndroidActivityProbe-LocationChangeRadiusMeters">Location Change Radius (Meters)</a>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="AndroidActivityProbe-LocationChangeRadiusMeters" value="25" min="1" class="form-control">
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="form-group row">
+    
+                            <div class="col-md-2">Anonymization</div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9">
+                                <hr>
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">Device&nbsp;ID</div>
+                            <div class="col-md-6">
+                                <select class="form-control" name="AndroidActivityProbe-Anonymization-DeviceId">
+                                    <option value="Do Not Anonymize" selected>Do Not Anonymize</option>
+                                    <option value="Omit">Omit</option>
+                                    <option value="Hash">Hash</option>
+                                </select>
+                            </div>
+                        </div>
+    
+    
+                        <div class="form-group row">
+    
+                            <div class="col-md-6">Timestamp</div>
+                            <div class="col-md-6">
+                                <select class="form-control" name="AndroidActivityProbe-Anonymization-Timestamp">
+                                    <option value="Do Not Anonymize" selected>Do Not Anonymize</option>
+                                    <option value="Omit">Omit</option>
+                                    <option value="Anonymous Timeline">Anonymous Timeline</option>
+                                </select>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </script>
+
