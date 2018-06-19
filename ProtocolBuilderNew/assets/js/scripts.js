@@ -21,6 +21,16 @@ function bar_progress(progress_line_object, direction) {
 
 jQuery(document).ready(function () {
 
+	var probes = {
+		'AndroidActivityProbe': 'android_activity_probe'
+	}
+
+	$.each(probes, function(probe_name, probe_file_name) {
+		alert(probe_name);
+		$('#' + probe_name + '-div').load('../partials/' + probe_file_name + '.html');
+	});
+
+
 	$(document).find('.probe-details').each( function(index) {
 		$(this).hide(100);
 	})
@@ -213,12 +223,10 @@ jQuery(document).ready(function () {
 
 	});
 
-
 	// submit
 	$('#protocol_form').on('submit', function (e) {
 		//alert($('#study_description').val());
 		e.preventDefault();
-
 
 		$.post("protocolParser.php", $("#protocol_form").serialize(), function (data) {
 
