@@ -26,21 +26,21 @@ jQuery(document).ready(function () {
 	}
 
 	$.each(probes, function(probe_name, probe_file_name) {
-		alert(probe_name);
-		$('#' + probe_name + '-div').load('../partials/' + probe_file_name + '.html');
+		$('#' + probe_name + '-div').load('/partials/probes/' + probe_file_name + '.html');
 	});
 
+	$("#sidebar").load("/partials/sidebar.html");
 
-	$(document).find('.probe-details').each( function(index) {
+	$('.probe-details').each( function(index) {
 		$(this).hide(100);
 	})
 
 	var script_uniqueid = 0;
 
-	/*
-	  Fullscreen background
-	*/
-	$.backstretch("assets/img/backgrounds/1.jpg");
+	// /*
+	//   Fullscreen background
+	// */
+	// $.backstretch("assets/img/backgrounds/1.jpg");
 
 	$('#top-navbar-1').on('shown.bs.collapse', function () {
 		$.backstretch("resize");

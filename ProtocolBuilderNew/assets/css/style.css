@@ -156,8 +156,10 @@ ul.navbar-nav {
 	h1, h2 { font-size: 32px; }
 	
 	.f1 { padding-bottom: 20px; }
-	.f1-buttons button { margin-bottom: 5px; }
-
+	.f1-buttons button { 
+		margin-bottom: 5px; 
+		/* text-align:right; */
+	}
 }
 
 
@@ -186,26 +188,6 @@ only screen and (                min-resolution: 2dppx) {
 	text-align: right;
 	font-weight: bold;
 }
-/*****  Dual Column Layout *****/
-
-/* .column {
-    float: left;
-}
-
-.left {
-    width: 35%;
-}
-
-.right {
-    width: 65%;
-} */
-
-/* Clear floats after the columns */
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
 .modal-dialog {
     width: 800px;

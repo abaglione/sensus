@@ -40,6 +40,15 @@ body {
   }
 }
 
+/* from http://jsfiddle.net/Madmartigan/MKK8v/ */
+
+.sidebar ul { list-style: none; padding: 0; margin:0 }
+.sidebar li { margin:0; padding: 0;}
+.sidebar li > div:hover { background-color: rgb(154, 154, 154)}
+
+.sidebar ul ul li div {padding-left:20px}
+.sidebar ul ul ul li div {padding-left:40px}
+
 .sidebar .nav-link {
   font-weight: 500;
   color: #333;
@@ -64,10 +73,13 @@ body {
   text-transform: uppercase;
 }
 
-.nav-item:hover {
-    background-color: #949494;
+.nav ul li {
+  list-style-type: none;
 }
-
+/* 
+.nav-item:hover {
+  background-color: #949494;
+} */
 
 /*
  * Content
@@ -115,10 +127,10 @@ body {
 
 /* Submenu stylings */
 
-.submenu-item {
+/* .level-2 {
   padding-left: 15px;
 }
 
-.subsubmenu-item {
+.level-3   {
   padding-left: 30px;
-}
+} */
